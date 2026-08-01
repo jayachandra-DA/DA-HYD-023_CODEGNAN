@@ -37,6 +37,7 @@ print(5>>1)
 #1) conditional statements ------> if ,else and elif
 #2) repetional statements ------> for and while
 age=int(input("Enter your age: "))
+<<<<<<< HEAD
 if age>0:
     if age < 18:
         print(f"Your Age is :{age}. So, You are not Eligible to Vote")
@@ -46,6 +47,15 @@ else:
     print('enter a valid age')
 
 
+=======
+if age<0:
+    if age > 18:
+        print(f"Your Age is :{age}. You are Eligible to Vote")
+    else:
+        print('you are not Eligible')
+else:
+   print('enter a valuble age')
+>>>>>>> 83d6dc58e1a94a683e8f53682e505d2d2107a2ef
 
 
 
