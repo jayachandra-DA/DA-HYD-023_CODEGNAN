@@ -1,5 +1,4 @@
 marks = int(input("Enter marks: "))
-
 if marks < 0 or marks > 100:
     print("Invalid marks entered")
 elif marks >= 90:
@@ -21,8 +20,9 @@ else:
     print("Grade: F")
     print("Remark: Failed, needs to reappear")
 
-num = int(input("Enter a number: "))
 
+
+num = int(input("Enter a number: "))
 if num > 0:
     if num%2==0:
         print("Even Number")
@@ -35,6 +35,8 @@ elif num < 0:
         print("Negative Odd Number")
 else:
     print("Zero is neither even nor odd")
+
+
 
 
 

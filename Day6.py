@@ -48,7 +48,11 @@ work_log=[0,1,1,1,0,1]
 for i in work_log:
         if i==1:
             current+=1
-            if current>highest
+            if current>highest:
+              highest=current
+        else:
+          current=0
+print(highest)
         
         
         
