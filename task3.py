@@ -29,12 +29,12 @@ while i<5:
 
 i=0
 original_pin=1248
-while i<5:
+while i<3:
     pin=int(input('Enter the ATM pin'))
     if pin==original_pin:
         print('Log in success')
         break
-    elif i==4:
+    elif i==2:
         print("max attempts")
         break
     else:
