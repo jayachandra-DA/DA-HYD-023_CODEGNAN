@@ -9,10 +9,11 @@ print(marks)
 marks.insert(0,90)
 marks.extend((75,85))
 print(marks)
-print(75 in marks)
-print("the removed value: ",marks.pop())
-print("final list:",marks)
-print("length of the list:",len(marks))
+if 75 in marks:
+    marks.remove(75)
+print("Poped value: ",marks.pop())
+print("Final list:",marks)
+print("Length of the list:",len(marks))
 '''
 
 
@@ -21,9 +22,13 @@ print("length of the list:",len(marks))
 numbers=[20,10,30,40,20]
 print(numbers)
 numbers.sort()
-print("ascending order list:",numbers)
+print("ascending order list:")
+for i in numbers:
+    print(i)
 numbers.reverse()
-print("descending order list:",numbers)
+print("descending order list:")
+for i in numbers:
+    print(i)
 x=int(input("Enter the number: "))
 if x in numbers:
     print("count and index: ",numbers.count(x),numbers.index(x))
@@ -89,15 +94,28 @@ a=python_students ^ (da_students)
 print("students who taking only one course:")
 for i in a:
     print(i)
+
 print('is the da set is a subset of python set???:',da_students.issubset(python_students))
 print('is the da set is a superset of python set???:',da_students.issuperset(python_students))
 print('is the da set is a subset of python set???:',da_students.isdisjoint(python_students))
 '''
+                      #or#
+'''
+if da_students.issubset(python_students):
+    print('da set is the subset of python set')
+else:
+    print('da set is not subset of python set')
 
+if da_students.issuperset(python_students):
+    print('da set is the superset of python set')
+else:
+    print('da set is not superset of python set')
 
-
-
-
+if da_students.isdisjoint(python_students):
+    print('da set is the disjoint of python set')
+else:
+    print('da set is not disjoint of python set')
+'''
 
 
 
