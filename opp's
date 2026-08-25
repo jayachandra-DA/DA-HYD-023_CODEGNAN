@@ -1,0 +1,62 @@
+'''
+opp -----> object oriented programming
+an object oriented programming is a mechanism or a process which revolves around creating objects.
+it consist of two important properties:
+1. attributes ----> which carries data to the class
+2.method----> it is function define inside a class  
+'''
+#syntax
+'''
+class Class_Name:
+    """doc string"""
+    attributes(charactristics)
+    ,,,,,,,
+    def fun(self): (behaviour)
+        ,,,,,,
+        ,,,,,,,
+    ,,,,,,
+obj=Class_Name()
+'''
+# Student Class with basic details
+'''
+class Student:
+    """Understanding the usage of OOP"""
+    name = "JAYA"
+    id = "CGH4020
+    gender = "Male"
+    email_id = "girijayachandra117@gmail.com"
+    # Methods(behaviour)
+    def display(self):
+        print(f"Student Name is {self.name}")
+        print(f"Student ID is {self.id}")
+        print(f"Student Mail id is {self.email_id}")
+U1 = Student()
+print(U1)
+#print(dir(U1))   # directory (returns all available methods/attributes)
+print(U1.display())
+
+U2 = Student()
+U2.display()
+'''
+
+# Now Student class for Multiple Objects
+
+class Students:
+    """Understanding the usage of OOP"""
+    name = input("Enter the Name:")
+    id = input("Enter the ID No:")
+    gender = input("Enter the Gender:")
+    email_id = input("Enter the Mail id:")
+    # Methods(behaviour)
+    def display(self):
+        print(f"Student Name is {self.name}")
+        print(f"Student ID is {self.id}")
+        print(f"Student Mail id is {self.email_id}")
+U1 =Students()
+U1.display()
+U2 = Students()
+U2.display()
+print(U1.__dict__())
+print(U2.__dict__())
+
+
