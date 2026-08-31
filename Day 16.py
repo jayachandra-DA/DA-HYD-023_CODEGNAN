@@ -7,7 +7,7 @@
 # set(), {}
 
 # a = {} --> it is an empty dictionary
-
+'''
 a = set()
 print(type(a))
 student_id={20,50,50,23,23}
@@ -65,7 +65,7 @@ d=name.copy()
 print(d)
 d.update([52,50,25,52])
 print(d)
-
+'''
 #mathematical operations --->
 d={52,85,96,3,67,85,63,56}
 e={52,63,56,3}
@@ -74,7 +74,7 @@ f=d.union(e,g)
 print(f)
 x=d.intersection(e,g)
 print(x)
-
+'''
 
 y=d.intersection_update(e)
 print(y)
@@ -111,7 +111,7 @@ print(da_23.issuperset(da_24))
 
 print(da_23.isdisjoint(da_24))
 
-'''
+
 
 # Length of Unique student ids in a class, where user can  enter first input
 # He should be giving number of student_ids, He will enter student_ids
@@ -124,7 +124,7 @@ student_ids = input("Enter Student Ids: ").split()
 result = set(student_ids)
 print(result)
 print(len(result))
-
+'''
 
 
 
